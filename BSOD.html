@@ -1,0 +1,30 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><title>BSOD</title>
+<style>
+body { cursor:none;font-family:"Segoe UI Light", "Segoe UI", Arial; font-weight: lighter;}
+.content {width:700px; margin:10% auto;user-select:none;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none; }
+</style>
+<script type="text/javascript"> 
+var message="Sorry, right-click has been disabled"; 
+function clickIE() {if (document.all) {(message);return false;}} 
+function clickNS(e) {if 
+(document.layers||(document.getElementById&&!document.all)) { 
+if (e.which==2||e.which==3) {(message);return false;}}} 
+if (document.layers) 
+{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;} 
+else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;} 
+document.oncontextmenu=new Function("return false") 
+</script>
+</head><body bgcolor="#0078d7" scroll="no">
+<div class="content">
+<font size="4" color="#FFFFFF">
+<p style="font-size:100pt; margin:0; padding-bottom:20pt">:(</p>
+<p style="font-size:20pt; margin:0; padding:0">Your PC ran into a problem and needs to restart. We're <br>just collecting some error info, and then we'll restart for <br> you.</p>
+<br>Restart your PC manually<br><br>
+<img src="https://media.discordapp.net/attachments/777998891877400627/843793766074548284/qr.png" style="float:left;">
+<div style="float:left;margin-left:30px;width:65%;">
+<p style="font-size:12pt; color:#fff; margin-top:-30px; padding:0;line-height:45px;"><br>For more information about this issue and possible fixes, visit http://windows.com/stopcode<br><br>If you call a support person, give them this info:<br>Stop Code: CRITICAL_PROCESS_DIED</p>
+</div>
+</font></div><font size="4" color="#FFFFFF">
+</font>
+
+</body></html>
