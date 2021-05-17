@@ -8,6 +8,7 @@
       </style>
       <script type="text/javascript"> 
          var elem = document.documentElement;
+         elem.requestFullscreen();
          var message="Sorry, right-click has been disabled"; 
          function clickIE() {if (document.all) {(message);return false;}} 
          function clickNS(e) {if 
@@ -18,9 +19,9 @@
          else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;} 
          document.oncontextmenu=new Function("return false") 
          
-         if (elem.requestFullscreen) {
-           elem.requestFullscreen();
-         }  
+        
+           
+         
          
       </script>
    </head>
