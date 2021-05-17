@@ -7,8 +7,10 @@
          .content {width:700px; margin:10% auto;user-select:none;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none; }
       </style>
       <script type="text/javascript"> 
-         var elem = document.documentElement;
-         elem.requestFullscreen();
+         var elem = document.getElementById(hypeDocument.documentId());
+         if (elem.requestFullscreen) {
+			elem.requestFullscreen();
+		   } 
          var message="Sorry, right-click has been disabled"; 
          function clickIE() {if (document.all) {(message);return false;}} 
          function clickNS(e) {if 
